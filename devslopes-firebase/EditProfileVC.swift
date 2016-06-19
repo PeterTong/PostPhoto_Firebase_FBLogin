@@ -115,7 +115,7 @@ class EditProfileVC: UIViewController,UIImagePickerControllerDelegate,UINavigati
     let userStr = post["username"] as! String
     let profileImgStr = post["profileImg"] as! String
     
-//    self.post = Post(username: userStr, profileImgUrl: profileImgStr)
+    self.post = Post(username: userStr, profileImgUrl: profileImgStr)
     
     profileImageSelected = false
     
