@@ -24,6 +24,9 @@ class EditProfileVC: UIViewController,UIImagePickerControllerDelegate,UINavigati
   var post: Post!
   var request: Request?
   
+  var usernames: String?
+  var profileImgUrl: String?
+  
     override func viewDidLoad() {
         super.viewDidLoad()
       
@@ -31,7 +34,23 @@ class EditProfileVC: UIViewController,UIImagePickerControllerDelegate,UINavigati
         imagePicker.delegate = self
         // Do any additional setup after loading the view.
       editProfileImage.userInteractionEnabled = true
+     
+      
     }
+  
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    
+    usernames = NSUserDefaults.standardUserDefaults().objectForKey(USERNAME_DEFAULT_KEY) as? String
+    profileImgUrl = NSUserDefaults.standardUserDefaults().objectForKey(PROFILEIMAGE_DEFAULT_KEY) as? String
+    var imageCache: UIImage?
+    if let url = profileImgUrl {
+      imageCache = FeedVC.imageCache.objectForKey(url) as? UIImage
+    }
+    
+    configureProfileView(usernames, profileURL: profileImgUrl, img: imageCache)
+    
+  }
   
   @IBAction func selectProfileImage(sender: UITapGestureRecognizer){
     presentViewController(imagePicker, animated: true, completion: nil)
@@ -78,6 +97,7 @@ class EditProfileVC: UIViewController,UIImagePickerControllerDelegate,UINavigati
                 if let links = info["links"] as? Dictionary<String, AnyObject> {
                   if let imageLink = links["image_link"] as? String {
                     self.changeProfileInFirebase(imageLink)
+                    
                   }
                 }
               }
@@ -89,7 +109,7 @@ class EditProfileVC: UIViewController,UIImagePickerControllerDelegate,UINavigati
           
         }
       }else{
-        self.changeProfileInFirebase(nil)
+        self.changeProfileInFirebase(profileImgUrl)
       }
     }
   }
@@ -110,11 +130,12 @@ class EditProfileVC: UIViewController,UIImagePickerControllerDelegate,UINavigati
     }
     
     let firebaseProfile = DataService.ds.REF_USER_CURRENT.child("profile")
-    firebaseProfile.setValue(post)
+    firebaseProfile.updateChildValues(post)
     
     let userStr = post["username"] as! String
     let profileImgStr = post["profileImg"] as! String
-    
+     NSUserDefaults.standardUserDefaults().setObject(userStr, forKey: USERNAME_DEFAULT_KEY)
+     NSUserDefaults.standardUserDefaults().setObject(profileImgStr,forKey: PROFILEIMAGE_DEFAULT_KEY)
     self.post = Post(username: userStr, profileImgUrl: profileImgStr)
     
     profileImageSelected = false
@@ -123,28 +144,33 @@ class EditProfileVC: UIViewController,UIImagePickerControllerDelegate,UINavigati
   }
   
   
-  func configureProfileView(post: Post, img: UIImage?){
-    self.post = post
+  func configureProfileView(username: String?,profileURL:String?, img: UIImage?){
+    //self.post = post
     
-    if post.profileImageUrl != nil {
+    if profileURL != nil {
       
       if img != nil {
         self.editProfileImage.image = img
       }else{
         
-        request = Alamofire.request(.GET, post.profileImageUrl!).validate(contentType: ["image/*"]).response(completionHandler: { (request, response, data, error) in
+        request = Alamofire.request(.GET, profileURL!).validate(contentType: ["image/*"]).response(completionHandler: { (request, response, data, error) in
           
           if error == nil {
             
             let image = UIImage(data: data!)!
             self.editProfileImage.image = image
-            FeedVC.imageCache.setObject(image, forKey: self.post.profileImageUrl!)
+            FeedVC.imageCache.setObject(image, forKey: profileURL!)
           }
         })
       }
       
+      
+      
     }
    
+    if username != "" {
+      editUsernameTxtField.text = username
+    }
     
     
   }
