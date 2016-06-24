@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1210C6F91D1A652B002497A1 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1210C6F81D1A652B002497A1 /* ProgressView.swift */; };
 		12790F8C1D0A89DD00CE2D90 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12790F8B1D0A89DD00CE2D90 /* FeedVC.swift */; };
 		12790F8E1D0A8ADD00CE2D90 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12790F8D1D0A8ADD00CE2D90 /* PostCell.swift */; };
 		12A91CA61D0B194200EF9EA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12A91CA51D0B194200EF9EA0 /* GoogleService-Info.plist */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1210C6F81D1A652B002497A1 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		12790F8B1D0A89DD00CE2D90 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		12790F8D1D0A8ADD00CE2D90 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		12A91CA51D0B194200EF9EA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		12C109111D05483D00AEDA61 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1210C6F81D1A652B002497A1 /* ProgressView.swift */,
 				12C109211D054F6100AEDA61 /* MaterialView.swift */,
 				12C109261D05D3E000AEDA61 /* MaterialButton.swift */,
 				12C109281D06957300AEDA61 /* MaterialTextField.swift */,
@@ -331,6 +334,7 @@
 				12C109221D054F6100AEDA61 /* MaterialView.swift in Sources */,
 				12C109001D05481700AEDA61 /* ViewController.swift in Sources */,
 				12790F8C1D0A89DD00CE2D90 /* FeedVC.swift in Sources */,
+				1210C6F91D1A652B002497A1 /* ProgressView.swift in Sources */,
 				12790F8E1D0A8ADD00CE2D90 /* PostCell.swift in Sources */,
 				12C108FE1D05481700AEDA61 /* AppDelegate.swift in Sources */,
 				12C109251D05501E00AEDA61 /* Constants.swift in Sources */,

@@ -454,21 +454,10 @@
                         <viewControllerLayoutGuide type="top" id="5eh-ao-826"/>
                         <viewControllerLayoutGuide type="bottom" id="ro8-wG-rnJ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fQ0-IS-sBt">
+                    <view key="view" contentMode="scaleToFill" id="fQ0-IS-sBt" customClass="ProgressView" customModule="devslopes_firebase" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="editProfile" translatesAutoresizingMaskIntoConstraints="NO" id="mnM-ss-U85">
-                                <rect key="frame" x="177" y="110" width="247" height="182"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="247" id="IRi-fv-Lh9"/>
-                                    <constraint firstAttribute="height" constant="182" id="aQG-Ek-oaT"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="3c1-5G-0NS" appends="YES" id="2sz-S3-KSn"/>
-                                </connections>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBc-b5-9rb">
                                 <rect key="frame" x="20" y="333" width="93" height="35"/>
                                 <constraints>
@@ -502,21 +491,60 @@
                                     <action selector="changeUserProfile:" destination="4jo-VH-jbU" eventType="touchUpInside" id="WnS-Pd-9Uy"/>
                                 </connections>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ttv-Qq-HTf">
+                                <rect key="frame" x="225" y="440" width="150" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Ecr-Za-48m"/>
+                                </constraints>
+                            </progressView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="editProfile" translatesAutoresizingMaskIntoConstraints="NO" id="mnM-ss-U85">
+                                <rect key="frame" x="177" y="110" width="247" height="182"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="247" id="IRi-fv-Lh9">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="170"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="190"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="182" id="aQG-Ek-oaT">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="150"/>
+                                    </constraint>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3c1-5G-0NS" appends="YES" id="2sz-S3-KSn"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.7279336018" blue="0.076916549589999994" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ro8-wG-rnJ" firstAttribute="top" secondItem="Gka-Iq-BCd" secondAttribute="bottom" constant="68" id="FQi-1s-udL"/>
+                            <constraint firstItem="ro8-wG-rnJ" firstAttribute="top" secondItem="Gka-Iq-BCd" secondAttribute="bottom" constant="68" id="FQi-1s-udL">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstItem="UO7-WF-1Qy" firstAttribute="leading" secondItem="JBc-b5-9rb" secondAttribute="trailing" constant="8" id="Jfd-cc-cAO"/>
+                            <constraint firstItem="Gka-Iq-BCd" firstAttribute="centerX" secondItem="ttv-Qq-HTf" secondAttribute="centerX" id="Lst-KI-RNX"/>
+                            <constraint firstItem="Gka-Iq-BCd" firstAttribute="top" secondItem="ttv-Qq-HTf" secondAttribute="bottom" constant="54" id="XNd-XK-QTL">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstItem="UO7-WF-1Qy" firstAttribute="centerY" secondItem="JBc-b5-9rb" secondAttribute="centerY" id="Xdr-xs-usv"/>
                             <constraint firstItem="Gka-Iq-BCd" firstAttribute="centerX" secondItem="fQ0-IS-sBt" secondAttribute="centerX" id="YTd-5r-gZs"/>
-                            <constraint firstItem="UO7-WF-1Qy" firstAttribute="top" secondItem="mnM-ss-U85" secondAttribute="bottom" constant="44" id="eQt-50-ph2"/>
+                            <constraint firstItem="UO7-WF-1Qy" firstAttribute="top" secondItem="mnM-ss-U85" secondAttribute="bottom" constant="44" id="eQt-50-ph2">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstItem="JBc-b5-9rb" firstAttribute="leading" secondItem="fQ0-IS-sBt" secondAttribute="leadingMargin" id="hY0-pA-hof"/>
                             <constraint firstItem="mnM-ss-U85" firstAttribute="centerX" secondItem="fQ0-IS-sBt" secondAttribute="centerX" id="lRQ-eS-hJN"/>
-                            <constraint firstItem="mnM-ss-U85" firstAttribute="top" secondItem="5eh-ao-826" secondAttribute="bottom" constant="46" id="mu6-8x-nex"/>
+                            <constraint firstItem="mnM-ss-U85" firstAttribute="top" secondItem="5eh-ao-826" secondAttribute="bottom" constant="46" id="mu6-8x-nex">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstItem="UO7-WF-1Qy" firstAttribute="trailing" secondItem="fQ0-IS-sBt" secondAttribute="trailingMargin" id="sqG-Pc-ufO"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="UpdateProfileProgressView" destination="ttv-Qq-HTf" id="10d-8h-UjA"/>
                         <outlet property="editProfileImage" destination="mnM-ss-U85" id="UMw-7L-9hI"/>
                         <outlet property="editUsernameTxtField" destination="UO7-WF-1Qy" id="etC-iw-H4L"/>
                     </connections>
@@ -538,7 +566,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ctP-87-JtY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.47058823529411764" green="0.31764705882352939" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
