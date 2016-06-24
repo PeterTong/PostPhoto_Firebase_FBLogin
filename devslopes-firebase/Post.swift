@@ -64,6 +64,14 @@ class Post {
       self._postDescription = desc
     }
     
+    if let userName = dictionary["username"] as? String
+    {
+      self._username = userName
+    }
+    
+    if let profileImgUrl = dictionary["profileImg"] as? String{
+      self._profileImageUrl = profileImgUrl
+    }
     
     
     self._postRef = DataService.ds.REF_POSTS.child(self._postKey)

@@ -287,33 +287,39 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SHx-3B-Zgc">
                                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                                                                     <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="iUn-It-5HL">
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="editProfile" translatesAutoresizingMaskIntoConstraints="NO" id="iUn-It-5HL">
                                                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="50" id="OtY-32-2E5"/>
                                                                                 <constraint firstAttribute="width" constant="50" id="xVE-Nj-nAa"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="demonslayer 31" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7.5" translatesAutoresizingMaskIntoConstraints="NO" id="iCY-bs-gCM">
-                                                                            <rect key="frame" x="60" y="0.0" width="95" height="50"/>
-                                                                            <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="17"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="demonslayer 31" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7.5" translatesAutoresizingMaskIntoConstraints="NO" id="iCY-bs-gCM">
+                                                                            <rect key="frame" x="60" y="0.0" width="150" height="50"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="150" id="45D-4V-w2p"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="16"/>
                                                                             <color key="textColor" red="0.95686274510000002" green="0.31764705879999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart-empty" translatesAutoresizingMaskIntoConstraints="NO" id="rhy-zt-yBq">
-                                                                            <rect key="frame" x="165" y="0.0" width="106" height="50"/>
+                                                                            <rect key="frame" x="220" y="0.0" width="50" height="50"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="50" id="8aW-Ev-CoM"/>
+                                                                            </constraints>
                                                                         </imageView>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="kxE-lq-Xmo">
-                                                                            <rect key="frame" x="281" y="0.0" width="39" height="50"/>
+                                                                            <rect key="frame" x="280" y="0.0" width="40" height="50"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1444" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEl-HS-3hT">
-                                                                                    <rect key="frame" x="1" y="0.0" width="39" height="25"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="25"/>
                                                                                     <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="17"/>
                                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Like" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akJ-02-wqk">
-                                                                                    <rect key="frame" x="1" y="25" width="39" height="25"/>
+                                                                                    <rect key="frame" x="0.0" y="25" width="40" height="25"/>
                                                                                     <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="17"/>
                                                                                     <color key="textColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
@@ -465,15 +471,16 @@
                                     <constraint firstAttribute="height" constant="35" id="sMU-5M-BEF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.7279336018" blue="0.076916549589999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.85882352941176465" green="0.86274509803921573" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UO7-WF-1Qy" customClass="MaterialTextField" customModule="devslopes_firebase" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="fsdfs" borderStyle="roundedRect" placeholder="Enter your username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UO7-WF-1Qy" customClass="MaterialTextField" customModule="devslopes_firebase" customModuleProvider="target">
                                 <rect key="frame" x="121" y="336" width="459" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Dit-Z0-JX5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.76786434142105264" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gka-Iq-BCd" customClass="MaterialButton" customModule="devslopes_firebase" customModuleProvider="target">
@@ -493,6 +500,7 @@
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ttv-Qq-HTf">
                                 <rect key="frame" x="225" y="440" width="150" height="2"/>
+                                <color key="tintColor" red="0.85882352939999995" green="0.86274509799999999" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="Ecr-Za-48m"/>
                                 </constraints>
@@ -585,7 +593,6 @@
         <image name="fb-icon" width="65" height="65"/>
         <image name="heart-empty" width="150" height="147"/>
         <image name="logout" width="22" height="22"/>
-        <image name="profile" width="100" height="104"/>
         <image name="profileEdit" width="22" height="22"/>
         <image name="screen" width="300" height="534"/>
     </resources>

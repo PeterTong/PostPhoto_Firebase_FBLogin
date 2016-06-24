@@ -77,6 +77,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,UIIma
     
     let post = posts[indexPath.row]
     
+    
+    
     if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell {
       
       cell.request?.cancel()
@@ -88,7 +90,13 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,UIIma
         
       }
       
-      cell.configureCell(post,img: img)
+      var profileImg: UIImage?
+      if let profile = post.profileImageUrl {
+        profileImg = FeedVC.imageCache.objectForKey(profile) as? UIImage
+      }
+      
+      
+      cell.configureCell(post,img: img,profileImg: profileImg)
       
       return cell
     }else{
@@ -180,13 +188,23 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource,UIIma
   
   
   func postToFirebase(imgUrl: String?){
+    let username = NSUserDefaults.standardUserDefaults().objectForKey(USERNAME_DEFAULT_KEY) as? String
+    let profileImgUrl = NSUserDefaults.standardUserDefaults().objectForKey(PROFILEIMAGE_DEFAULT_KEY) as? String
+    
+    
+    
     var post: Dictionary<String, AnyObject> = [
       "description": postField.text!,
-      "likes": 0
+      "likes": 0,
+      "username": username!
     ]
     
     if imgUrl != nil {
       post["imageUrl"] = imgUrl
+    }
+    
+    if profileImgUrl != nil {
+      post["profileImg"] = profileImgUrl
     }
     
     let firebasePost = DataService.ds.REF_POSTS.childByAutoId()

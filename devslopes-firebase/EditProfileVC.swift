@@ -49,9 +49,11 @@ class EditProfileVC: UIViewController,UIImagePickerControllerDelegate,UINavigati
       EZLoadingActivity.Settings.ActivityColor = UIColor(red: 219/255, green: 223/255, blue: 34/255, alpha: 1.0)
       EZLoadingActivity.Settings.SuccessText = "Success Update"
       EZLoadingActivity.Settings.TextColor = UIColor(red: 219/255, green: 223/255, blue: 34/255, alpha: 1.0)
-      EZLoadingActivity.Settings.BackgroundColor = UIColor(red: 150/255, green: 102/255, blue: 50/255, alpha: 0.7)
+      EZLoadingActivity.Settings.BackgroundColor = UIColor(red: 150/255, green: 102/255, blue: 50/255, alpha: 0.3)
       EZLoadingActivity.Settings.SuccessColor = UIColor(red: 219/255, green: 223/255, blue: 34/255, alpha: 1.0)
       EZLoadingActivity.hide()
+      
+      self.navigationController?.navigationBar.tintColor = UIColor(red: 230/255, green: 190/255, blue: 34/255, alpha: 1.0)
       
     }
   

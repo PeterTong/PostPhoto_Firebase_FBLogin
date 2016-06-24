@@ -34,10 +34,10 @@ class PostCell: UITableViewCell {
   }
   
   override func drawRect(rect: CGRect) {
-    profileImg.layer.cornerRadius = profileImg.frame.size.width / 2
-    profileImg.clipsToBounds = true
-    
-    showcaseImg.clipsToBounds = true
+//    profileImg.layer.cornerRadius = profileImg.frame.size.width / 2
+//    profileImg.clipsToBounds = true
+//    
+//    showcaseImg.clipsToBounds = true
   }
   
   override func setSelected(selected: Bool, animated: Bool) {
@@ -46,13 +46,19 @@ class PostCell: UITableViewCell {
     
   }
   
-  func configureCell(post: Post, img: UIImage?) {
+  func configureCell(post: Post, img: UIImage?, profileImg: UIImage?) {
     
     self.post = post
    
     
     self.descriptionText.text = post.postDescription
     self.likesLbl.text = "\(post.likes)"
+    
+    if post.username == "" {
+      self.usernameLbl.text = ""
+    }else{
+      self.usernameLbl.text = post.username
+    }
     
     if post.imageUrl != nil {
       
@@ -74,6 +80,26 @@ class PostCell: UITableViewCell {
       
     }else{
       self.showcaseImg.hidden = true
+    }
+    
+    if post.profileImageUrl != nil {
+      
+      if profileImg != nil {
+        self.profileImg.image = profileImg
+      }else{
+        
+        request = Alamofire.request(.GET, post.profileImageUrl!).validate(contentType: ["image/*"]).response(completionHandler: { (request, response, data, error) in
+          
+          if error == nil {
+            let image = UIImage(data: data!)!
+            self.profileImg.image = image
+            
+            
+          }
+        })
+      }
+    }else{
+      self.profileImg.image = UIImage(named: "editProfile")
     }
     
     likeRef = DataService.ds.REF_USER_CURRENT.child("likes").child(post.postKey)
