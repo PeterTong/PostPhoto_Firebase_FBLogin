@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		072A6E46C49B1B09124CB766 /* Pods_PostPhoto_Firebase_FBLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E442B5EEA7D443C45BE8FE /* Pods_PostPhoto_Firebase_FBLogin.framework */; };
 		1210C6F91D1A652B002497A1 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1210C6F81D1A652B002497A1 /* ProgressView.swift */; };
 		12790F8C1D0A89DD00CE2D90 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12790F8B1D0A89DD00CE2D90 /* FeedVC.swift */; };
 		12790F8E1D0A8ADD00CE2D90 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12790F8D1D0A8ADD00CE2D90 /* PostCell.swift */; };
-		12A91CA61D0B194200EF9EA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12A91CA51D0B194200EF9EA0 /* GoogleService-Info.plist */; };
+		129A30C91D446ABD0053E1A8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129A30C61D446ABD0053E1A8 /* Bolts.framework */; };
+		129A30CA1D446ABD0053E1A8 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129A30C71D446ABD0053E1A8 /* FBSDKCoreKit.framework */; };
+		129A30CB1D446ABD0053E1A8 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129A30C81D446ABD0053E1A8 /* FBSDKLoginKit.framework */; };
+		129A30CD1D446C420053E1A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 129A30CC1D446C420053E1A8 /* GoogleService-Info.plist */; };
 		12A91CA81D0BBA6F00EF9EA0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A91CA71D0BBA6F00EF9EA0 /* Post.swift */; };
 		12C108FE1D05481700AEDA61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C108FD1D05481700AEDA61 /* AppDelegate.swift */; };
 		12C109001D05481700AEDA61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C108FF1D05481700AEDA61 /* ViewController.swift */; };
@@ -25,21 +29,22 @@
 		12C109251D05501E00AEDA61 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C109241D05501E00AEDA61 /* Constants.swift */; };
 		12C109271D05D3E000AEDA61 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C109261D05D3E000AEDA61 /* MaterialButton.swift */; };
 		12C109291D06957300AEDA61 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C109281D06957300AEDA61 /* MaterialTextField.swift */; };
-		12C1092E1D069DC700AEDA61 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C1092B1D069DC700AEDA61 /* Bolts.framework */; };
-		12C1092F1D069DC700AEDA61 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C1092C1D069DC700AEDA61 /* FBSDKCoreKit.framework */; };
-		12C109301D069DC700AEDA61 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C1092D1D069DC700AEDA61 /* FBSDKLoginKit.framework */; };
 		12C109331D07187200AEDA61 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C109321D07187200AEDA61 /* DataService.swift */; };
 		12FAFC791D118FEF00BE85A8 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FAFC781D118FEF00BE85A8 /* EditProfileVC.swift */; };
-		16C0E7A8C455DD6C1AB089AC /* Pods_devslopes_firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6A19F9DBD39183770FC5E8 /* Pods_devslopes_firebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08E442B5EEA7D443C45BE8FE /* Pods_PostPhoto_Firebase_FBLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostPhoto_Firebase_FBLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1210C6F81D1A652B002497A1 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		12790F8B1D0A89DD00CE2D90 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		12790F8D1D0A8ADD00CE2D90 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
-		12A91CA51D0B194200EF9EA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		129A30C61D446ABD0053E1A8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		129A30C71D446ABD0053E1A8 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		129A30C81D446ABD0053E1A8 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		129A30CC1D446C420053E1A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		129A30CE1D446D750053E1A8 /* PostPhoto_Firebase_FBLogin.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = PostPhoto_Firebase_FBLogin.xcworkspace; sourceTree = "<group>"; };
 		12A91CA71D0BBA6F00EF9EA0 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		12C108FA1D05481700AEDA61 /* devslopes-firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "devslopes-firebase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C108FA1D05481700AEDA61 /* PostPhoto_Firebase_FBLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostPhoto_Firebase_FBLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C108FD1D05481700AEDA61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12C108FF1D05481700AEDA61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		12C109021D05481800AEDA61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,12 +59,11 @@
 		12C109241D05501E00AEDA61 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		12C109261D05D3E000AEDA61 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		12C109281D06957300AEDA61 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
-		12C1092B1D069DC700AEDA61 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		12C1092C1D069DC700AEDA61 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		12C1092D1D069DC700AEDA61 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		12C109321D07187200AEDA61 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		12FAFC781D118FEF00BE85A8 /* EditProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
 		3D6A19F9DBD39183770FC5E8 /* Pods_devslopes_firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_devslopes_firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		505918588DBFF60BA9A24102 /* Pods-PostPhoto_Firebase_FBLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostPhoto_Firebase_FBLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-PostPhoto_Firebase_FBLogin/Pods-PostPhoto_Firebase_FBLogin.release.xcconfig"; sourceTree = "<group>"; };
+		7870A68387ABCD8565726669 /* Pods-PostPhoto_Firebase_FBLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostPhoto_Firebase_FBLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PostPhoto_Firebase_FBLogin/Pods-PostPhoto_Firebase_FBLogin.debug.xcconfig"; sourceTree = "<group>"; };
 		BAA730AF24115F41BE4A381A /* Pods-devslopes-firebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-firebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-devslopes-firebase/Pods-devslopes-firebase.release.xcconfig"; sourceTree = "<group>"; };
 		C56E6157F7882689FBB89018 /* Pods-devslopes-firebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-firebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-devslopes-firebase/Pods-devslopes-firebase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,10 +73,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12C1092E1D069DC700AEDA61 /* Bolts.framework in Frameworks */,
-				12C1092F1D069DC700AEDA61 /* FBSDKCoreKit.framework in Frameworks */,
-				12C109301D069DC700AEDA61 /* FBSDKLoginKit.framework in Frameworks */,
-				16C0E7A8C455DD6C1AB089AC /* Pods_devslopes_firebase.framework in Frameworks */,
+				129A30C91D446ABD0053E1A8 /* Bolts.framework in Frameworks */,
+				129A30CA1D446ABD0053E1A8 /* FBSDKCoreKit.framework in Frameworks */,
+				129A30CB1D446ABD0053E1A8 /* FBSDKLoginKit.framework in Frameworks */,
+				072A6E46C49B1B09124CB766 /* Pods_PostPhoto_Firebase_FBLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +86,7 @@
 		12C108F11D05481700AEDA61 = {
 			isa = PBXGroup;
 			children = (
-				12C108FC1D05481700AEDA61 /* devslopes-firebase */,
+				12C108FC1D05481700AEDA61 /* PostPhoto_Firebase_FBLogin */,
 				12C108FB1D05481700AEDA61 /* Products */,
 				2C967EFACD4E257E235D0AE3 /* Pods */,
 				6F569C9357BD9F6112804F76 /* Frameworks */,
@@ -92,12 +96,12 @@
 		12C108FB1D05481700AEDA61 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				12C108FA1D05481700AEDA61 /* devslopes-firebase.app */,
+				12C108FA1D05481700AEDA61 /* PostPhoto_Firebase_FBLogin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		12C108FC1D05481700AEDA61 /* devslopes-firebase */ = {
+		12C108FC1D05481700AEDA61 /* PostPhoto_Firebase_FBLogin */ = {
 			isa = PBXGroup;
 			children = (
 				12C109311D07185D00AEDA61 /* Services */,
@@ -111,10 +115,10 @@
 				12C109011D05481800AEDA61 /* Main.storyboard */,
 				12C109041D05481800AEDA61 /* Assets.xcassets */,
 				12C109061D05481800AEDA61 /* LaunchScreen.storyboard */,
-				12A91CA51D0B194200EF9EA0 /* GoogleService-Info.plist */,
+				129A30CC1D446C420053E1A8 /* GoogleService-Info.plist */,
 				12C109091D05481800AEDA61 /* Info.plist */,
 			);
-			path = "devslopes-firebase";
+			path = PostPhoto_Firebase_FBLogin;
 			sourceTree = "<group>";
 		};
 		12C1090F1D05482700AEDA61 /* Controller */ = {
@@ -169,9 +173,9 @@
 		12C1092A1D069D8000AEDA61 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				12C1092B1D069DC700AEDA61 /* Bolts.framework */,
-				12C1092C1D069DC700AEDA61 /* FBSDKCoreKit.framework */,
-				12C1092D1D069DC700AEDA61 /* FBSDKLoginKit.framework */,
+				129A30C61D446ABD0053E1A8 /* Bolts.framework */,
+				129A30C71D446ABD0053E1A8 /* FBSDKCoreKit.framework */,
+				129A30C81D446ABD0053E1A8 /* FBSDKLoginKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,6 +193,8 @@
 			children = (
 				C56E6157F7882689FBB89018 /* Pods-devslopes-firebase.debug.xcconfig */,
 				BAA730AF24115F41BE4A381A /* Pods-devslopes-firebase.release.xcconfig */,
+				7870A68387ABCD8565726669 /* Pods-PostPhoto_Firebase_FBLogin.debug.xcconfig */,
+				505918588DBFF60BA9A24102 /* Pods-PostPhoto_Firebase_FBLogin.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -196,7 +202,9 @@
 		6F569C9357BD9F6112804F76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				129A30CE1D446D750053E1A8 /* PostPhoto_Firebase_FBLogin.xcworkspace */,
 				3D6A19F9DBD39183770FC5E8 /* Pods_devslopes_firebase.framework */,
+				08E442B5EEA7D443C45BE8FE /* Pods_PostPhoto_Firebase_FBLogin.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -204,9 +212,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		12C108F91D05481700AEDA61 /* devslopes-firebase */ = {
+		12C108F91D05481700AEDA61 /* PostPhoto_Firebase_FBLogin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 12C1090C1D05481800AEDA61 /* Build configuration list for PBXNativeTarget "devslopes-firebase" */;
+			buildConfigurationList = 12C1090C1D05481800AEDA61 /* Build configuration list for PBXNativeTarget "PostPhoto_Firebase_FBLogin" */;
 			buildPhases = (
 				1007C5936CB53ECC76C2CF2B /* 📦 Check Pods Manifest.lock */,
 				12C108F61D05481700AEDA61 /* Sources */,
@@ -219,9 +227,9 @@
 			);
 			dependencies = (
 			);
-			name = "devslopes-firebase";
+			name = PostPhoto_Firebase_FBLogin;
 			productName = "devslopes-firebase";
-			productReference = 12C108FA1D05481700AEDA61 /* devslopes-firebase.app */;
+			productReference = 12C108FA1D05481700AEDA61 /* PostPhoto_Firebase_FBLogin.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -240,7 +248,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 12C108F51D05481700AEDA61 /* Build configuration list for PBXProject "devslopes-firebase" */;
+			buildConfigurationList = 12C108F51D05481700AEDA61 /* Build configuration list for PBXProject "PostPhoto_Firebase_FBLogin" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -253,7 +261,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				12C108F91D05481700AEDA61 /* devslopes-firebase */,
+				12C108F91D05481700AEDA61 /* PostPhoto_Firebase_FBLogin */,
 			);
 		};
 /* End PBXProject section */
@@ -264,7 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12C109171D05489400AEDA61 /* NotoSans-Bold.ttf in Resources */,
-				12A91CA61D0B194200EF9EA0 /* GoogleService-Info.plist in Resources */,
+				129A30CD1D446C420053E1A8 /* GoogleService-Info.plist in Resources */,
 				12C109081D05481800AEDA61 /* LaunchScreen.storyboard in Resources */,
 				12C109181D05489400AEDA61 /* NotoSans-BoldItalic.ttf in Resources */,
 				12C109191D05489400AEDA61 /* NotoSans-Italic.ttf in Resources */,
@@ -304,7 +312,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-devslopes-firebase/Pods-devslopes-firebase-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PostPhoto_Firebase_FBLogin/Pods-PostPhoto_Firebase_FBLogin-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		98C4C1C67923E9BED1D8F17A /* 📦 Embed Pods Frameworks */ = {
@@ -319,7 +327,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-devslopes-firebase/Pods-devslopes-firebase-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PostPhoto_Firebase_FBLogin/Pods-PostPhoto_Firebase_FBLogin-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -453,42 +461,44 @@
 		};
 		12C1090D1D05481800AEDA61 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C56E6157F7882689FBB89018 /* Pods-devslopes-firebase.debug.xcconfig */;
+			baseConfigurationReference = 7870A68387ABCD8565726669 /* Pods-PostPhoto_Firebase_FBLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/devslopes-firebase",
+					"$(PROJECT_DIR)/PostPhoto_Firebase_FBLogin",
 				);
-				INFOPLIST_FILE = "devslopes-firebase/Info.plist";
+				INFOPLIST_FILE = PostPhoto_Firebase_FBLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ObjectiveCDeveloper.devslopes-firebase";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ObjectiveCDeveloper.PostPhoto_Firebase_FBLogin;
+				PRODUCT_NAME = PostPhoto_Firebase_FBLogin;
 			};
 			name = Debug;
 		};
 		12C1090E1D05481800AEDA61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAA730AF24115F41BE4A381A /* Pods-devslopes-firebase.release.xcconfig */;
+			baseConfigurationReference = 505918588DBFF60BA9A24102 /* Pods-PostPhoto_Firebase_FBLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/devslopes-firebase",
+					"$(PROJECT_DIR)/PostPhoto_Firebase_FBLogin",
 				);
-				INFOPLIST_FILE = "devslopes-firebase/Info.plist";
+				INFOPLIST_FILE = PostPhoto_Firebase_FBLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ObjectiveCDeveloper.devslopes-firebase";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ObjectiveCDeveloper.PostPhoto_Firebase_FBLogin;
+				PRODUCT_NAME = PostPhoto_Firebase_FBLogin;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		12C108F51D05481700AEDA61 /* Build configuration list for PBXProject "devslopes-firebase" */ = {
+		12C108F51D05481700AEDA61 /* Build configuration list for PBXProject "PostPhoto_Firebase_FBLogin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				12C1090A1D05481800AEDA61 /* Debug */,
@@ -497,7 +507,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		12C1090C1D05481800AEDA61 /* Build configuration list for PBXNativeTarget "devslopes-firebase" */ = {
+		12C1090C1D05481800AEDA61 /* Build configuration list for PBXNativeTarget "PostPhoto_Firebase_FBLogin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				12C1090D1D05481800AEDA61 /* Debug */,
